@@ -4,7 +4,7 @@
 
 可能来自于 [https://github.com/gdut-yy](https://github.com/gdut-yy)，目前已经被删除，Fork维护。
 
-在线阅读：暂无
+在线阅读：[https://iszhaoxg.github.io/cleancode-book/](https://iszhaoxg.github.io/cleancode-book/)
 
 <img src="./docs/cover.jpg" width=24% />
 
@@ -47,5 +47,5 @@ cd cleancode-book/
 yarn docs:dev
 
 # 本地阅读
-http://localhost:8080/cleancode/
+http://localhost:8080/cleancode-book/
 ```
