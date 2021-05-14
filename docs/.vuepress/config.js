@@ -3,7 +3,7 @@ module.exports = {
   // 网站的标题
   title: "Clean Code 中文",
   // 上下文根
-  base: "/cleancode/",
+  base: "/cleancode-book/",
   themeConfig: {
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: "iszhaoxg/cleancode-book",
