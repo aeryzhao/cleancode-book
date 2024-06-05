@@ -1,16 +1,10 @@
-# Clean-Code-zh
+# Clean-Code（代码整洁之道）
 
 《代码整洁之道》部分中文翻译
 
-可能来自于 [https://github.com/gdut-yy](https://github.com/gdut-yy)，目前已经被删除，Fork维护。
-
-在线阅读：[https://iszhaoxg.github.io/cleancode-book/](https://iszhaoxg.github.io/cleancode-book/)
-
 <img src="./docs/cover.jpg" width=24% />
 
-## 前言
-
-## Index
+## 目录
 
 - [第 1 章 整洁代码](docs/ch1.md)
 - [第 2 章 有意义的命名](docs/ch2.md)
@@ -33,7 +27,7 @@
 
 ## 本地开发 & 阅读
 
-本项目基于 vuepress 进行开发，以提供比 github mardown 更佳的阅读体验
+本项目基于 vuepress 进行开发，以提供比 github markdown 更佳的阅读体验
 
 依赖于 `node.js`、`yarn`、`vuepress` 等环境
 
@@ -42,7 +36,7 @@
 yarn add -D vuepress
 
 # 本地开发
-git clone https://github.com/iszhaoxg/cleancode-book.git
+git clone https://github.com/aeryzhao/cleancode-book.git
 cd cleancode-book/
 yarn docs:dev
 
