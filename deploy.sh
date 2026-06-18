@@ -16,10 +16,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/aerayzhao/cleancode-book.git master:gh-pages
+git push -f https://github.com/aeryzhao/cleancode-book.git main:gh-pages
 
 cd -
