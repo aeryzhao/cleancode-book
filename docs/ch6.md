@@ -1,6 +1,6 @@
 # 第 6 章 Objects and Data Structures 对象和数据结构
 
-![](figures/ch6/6_1fig_martin.jpg)
+![](/figures/ch6/6_1fig_martin.jpg)
 
 There is a reason that we keep our variables private. We don’t want anyone else to depend on them. We want to keep the freedom to change their type or implementation on a whim or an impulse. Why, then, do so many programmers automatically add getters and setters to their objects, exposing their private variables as if they were public?
 
@@ -262,7 +262,7 @@ Are these two snippets of code violations of the Law of Demeter? Certainly the c
 
 > 上列代码是否违反了得墨忒耳律呢？当然，模块知道 ctxt 对象包含有多个选项，每个选项中都有一个临时目录，而每个临时目录都有一个绝对路径。对于一个函数，这些知识真够丰富的。调用函数懂得如何在一大堆不同对象间浏览。
 
-![](figures/ch6/6_2fig_martin.jpg)
+![](/figures/ch6/6_2fig_martin.jpg)
 
 Whether this is a violation of Demeter depends on whether or not ctxt, Options, and ScratchDir are objects or data structures. If they are objects, then their internal structure should be hidden rather than exposed, and so knowledge of their innards is a clear violation of the Law of Demeter. On the other hand, if ctxt, Options, and ScratchDir are just data structures with no behavior, then they naturally expose their internal structure, and so Demeter does not apply.
 

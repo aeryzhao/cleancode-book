@@ -1,6 +1,6 @@
 # 第 9 章 Unit Tests 单元测试
 
-![](figures/ch9/9_1fig_martin.jpg)
+![](/figures/ch9/9_1fig_martin.jpg)
 
 Our profession has come a long way in the last ten years. In 1997 no one had heard of Test Driven Development. For the vast majority of us, unit tests were short bits of throw-away code that we wrote to make sure our programs "worked." We would painstakingly write our classes and methods, and then we would concoct some ad hoc code to test them. Typically this would involve some kind of simple driver program that would allow us to manually interact with the program we had written.
 

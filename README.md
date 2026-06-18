@@ -1,6 +1,6 @@
 # Clean-Code（代码整洁之道）
 
-《代码整洁之道》部分中文翻译
+《代码整洁之道》中文翻译
 
 <img src="./docs/cover.jpg" width=24% />
 
@@ -27,19 +27,21 @@
 
 ## 本地开发 & 阅读
 
-本项目基于 vuepress 进行开发，以提供比 github markdown 更佳的阅读体验
+本项目基于 VitePress 进行开发，以提供比 GitHub Markdown 更佳的阅读体验
 
-依赖于 `node.js`、`yarn`、`vuepress` 等环境
+依赖于 `Node.js`、`yarn` 等环境
 
 ```sh
-# vuepress
-yarn add -D vuepress
-
-# 本地开发
+# 克隆项目
 git clone https://github.com/aeryzhao/cleancode-book.git
 cd cleancode-book/
+
+# 安装依赖
+yarn install
+
+# 本地开发
 yarn docs:dev
 
 # 本地阅读
-http://localhost:8080/cleancode-book/
+http://localhost:5173/cleancode-book/
 ```

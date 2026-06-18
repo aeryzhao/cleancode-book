@@ -1,6 +1,6 @@
 # 第 4 章 Comments 注释
 
-![](figures/ch4/4_1fig_martin.jpg)
+![](/figures/ch4/4_1fig_martin.jpg)
 
 “Don’t comment bad code—rewrite it.”—Brian W. Kernighan and P. J. Plaugher1
 
@@ -232,7 +232,7 @@ Sometimes it is useful to warn other programmers about certain consequences. For
 
 > 有时，用于警告其他程序员会出现某种后果的注释也是有用的。例如，下面的注释解释了为什么要关闭某个特定的测试用例：
 
-![](figures/ch4/4_2fig_martin.jpg)
+![](/figures/ch4/4_2fig_martin.jpg)
 
 ```java
 // Don't run unless you

@@ -1,6 +1,6 @@
 # 第 2 章 Meaningful Names 有意义的命名
 
-![](figures/ch2/2_1fig_martin.jpg)
+![](/figures/ch2/2_1fig_martin.jpg)
 
 by Tim Ottinger
 
@@ -147,7 +147,7 @@ The reader may think this a contrivance, but we have examined code where such th
 
 ## 2.4 MAKE MEANINGFUL DISTINCTIONS 做有意义的区分
 
-![](figures/ch2/2_2fig_martin.jpg)
+![](/figures/ch2/2_2fig_martin.jpg)
 
 Programmers create problems for themselves when they write code solely to satisfy a compiler or interpreter. For example, because you can’t use the same name to refer to two different things in the same scope, you might be tempted to change one name in an arbitrary way. Sometimes this is done by misspelling one, leading to the surprising situation where correcting spelling errors leads to an inability to compile.2
 
@@ -415,7 +415,7 @@ If names are too clever, they will be memorable only to people who share the aut
 
 > 如果名称太耍宝，那就只有同作者一般有幽默感的人才能记得住，而且还是在他们记得那个笑话的时候才行。谁会知道名为 HolyHandGrenade[11]的函数是用来做什么的呢？没错，这名字挺伶俐，不过 DeleteItems[12]或许是更好的名称。宁可明确，毋为好玩。
 
-![](figures/ch2/2_3fig_martin.jpg)
+![](/figures/ch2/2_3fig_martin.jpg)
 
 Cuteness in code often appears in the form of colloquialisms or slang. For example, don’t use the name whack() to mean kill(). Don’t tell little culture-dependent jokes like eatMyShorts() to mean abort().
 

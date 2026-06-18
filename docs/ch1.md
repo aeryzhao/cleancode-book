@@ -1,6 +1,6 @@
 # 第 1 章 Clean Code 整洁代码
 
-![](figures/ch1/1-1fig_martin.jpg)
+![](/figures/ch1/1-1fig_martin.jpg)
 
 You are reading this book for two reasons. First, you are a programmer. Second, you want to be a better programmer. Good. We need better programmers.
 
@@ -48,7 +48,7 @@ I know of one company that, in the late 80s, wrote a killer app. It was very pop
 
 > 20 世纪 80 年代末，有家公司写了个很流行的杀手应用，许多专业人士都买来用。然后，发布周期开始拉长。缺陷总是不能修复。装载时间越来越久，崩溃的几率也越来越大。至今我还记得自己在某天沮丧地关掉那个程序，从此再不用它。在那之后不久，该公司就关门大吉了。
 
-![](figures/ch1/1-2fig_martin.jpg)
+![](/figures/ch1/1-2fig_martin.jpg)
 
 Two decades later I met one of the early employees of that company and asked him what had happened. The answer confirmed my fears. They had rushed the product to market and had made a huge mess in the code. As they added more and more features, the code got worse and worse until they simply could not manage it any longer. It was the bad code that brought the company down.
 
@@ -82,7 +82,7 @@ As the mess builds, the productivity of the team continues to decrease, asymptot
 
 Figure 1-1 Productivity vs. time
 
-![](figures/ch1/1-4fig_martin.jpg)
+![](/figures/ch1/1-4fig_martin.jpg)
 
 ### 1.3.1 The Grand Redesign in the Sky 华丽新设计
 
@@ -176,7 +176,7 @@ There are probably as many definitions as there are programmers. So I asked some
 
 > 有多少程序员，就有多少定义。所以我只询问了一些非常知名且经验丰富的程序员。
 
-![](figures/ch1/1-5fig_martin.jpg)
+![](/figures/ch1/1-5fig_martin.jpg)
 
 Bjarne Stroustrup, inventor of C++ and author of The C++ Programming Language
 
@@ -212,7 +212,7 @@ Grady Booch, author of Object Oriented Analysis and Design with Applications
 
 > Grady Booch，Object Oriented Analysis and Design with Applications（中译版《面向对象分析与设计》）一书作者。
 
-![](figures/ch1/1-6fig_martin.jpg)
+![](/figures/ch1/1-6fig_martin.jpg)
 
 Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
 
@@ -234,7 +234,7 @@ I find Grady’s use of the phrase “crisp abstraction” to be a fascinating o
 
 > “老大”Dave Thomas，OTI 公司创始人，Eclipse 战略教父。
 
-![](figures/ch1/1-7fig_martin.jpg)
+![](/figures/ch1/1-7fig_martin.jpg)
 
 Clean code can be read, and enhanced by a developer other than its original author. It has unit and acceptance tests. It has meaningful names. It provides one way rather than many ways for doing one thing. It has minimal dependencies, which are explicitly defined, and provides a clear and minimal API. Code should be literate since depending on the language, not all necessary information can be expressed clearly in code alone.
 
@@ -262,7 +262,7 @@ Michael Feathers, author of Working Effectively with Legacy Code
 
 > Michael Feathers，Working Effectively with Legacy Code（中译版《修改代码的艺术》）一书作者。
 
-![](figures/ch1/1-8fig_martin.jpg)
+![](/figures/ch1/1-8fig_martin.jpg)
 
 I could list all of the qualities that I notice in clean code, but there is one overarching quality that leads to all of them. Clean code always looks like it was written by someone who cares. There is nothing obvious that you can do to make it better. All of those things were thought about by the code’s author, and if you try to imagine improvements, you’re led back to where you are, sitting in appreciation of the code someone left for you—code left by someone who cares deeply about the craft.
 
@@ -284,7 +284,7 @@ Ron began his career programming in Fortran at the Strategic Air Command and has
 
 > Ron 初入行就在战略空军司令部（Strategic Air Command）编写 Fortran 程序，此后几乎在每种机器上编写过每种语言的代码。他的言论值得咀嚼。
 
-![](figures/ch1/1-9fig_martin.jpg)
+![](/figures/ch1/1-9fig_martin.jpg)
 
 In recent years I begin, and nearly end, with Beck’s rules of simple code. In priority order, simple code:
 
@@ -338,7 +338,7 @@ Ward Cunningham, inventor of Wiki, inventor of Fit, coinventor of eXtreme Progra
 
 > Ward Cunningham，Wiki 发明者，eXtreme Programming （极限编程）的创始人之一，Smalltalk 语言和面向对象的思想领袖。所有在意代码者的教父。
 
-![](figures/ch1/1-10fig_martin.jpg)
+![](/figures/ch1/1-10fig_martin.jpg)
 
 You know you are working on clean code when each routine you read turns out to be pretty much what you expected. You can call it beautiful code when the code also makes it look like the language was made for the problem.
 
@@ -366,7 +366,7 @@ What about me (Uncle Bob)? What do I think clean code is? This book will tell yo
 
 > 我（鲍勃大叔）又是怎么想的呢？在我眼中整洁代码是什么样的？本书将以详细到吓死人的程度告诉你，我和我的同道对整洁代码的看法。我们会告诉你关于整洁变量名的想法，关于整洁函数的想法，关于整洁类的想法，如此等等。我们视这些观点为当然，且不为其逆耳而致歉。对我们而言，在职业生涯的这个阶段，这些观点确属当然，也是我们整洁代码派的圭旨。
 
-![](figures/ch1/1-11fig_martin.jpg)
+![](/figures/ch1/1-11fig_martin.jpg)
 
 Martial artists do not all agree about the best martial art, or the best technique within a martial art. Often master martial artists will form their own schools of thought and gather students to learn from them. So we see Gracie Jiu Jistu, founded and taught by the Gracie family in Brazil. We see Hakkoryu Jiu Jistu, founded and taught by Okuyama Ryuho in Tokyo. We see Jeet Kune Do, founded and taught by Bruce Lee in the United States.
 

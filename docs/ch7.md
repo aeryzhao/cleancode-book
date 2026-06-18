@@ -2,7 +2,7 @@
 
 by Michael Feathers
 
-![](figures/ch7/103fig01.jpg)
+![](/figures/ch7/103fig01.jpg)
 
 It might seem odd to have a section about error handling in a book about clean code. Error handling is just one of those things that we all have to do when we program. Input can be abnormal and devices can fail. In short, things can go wrong, and when they do, we as programmers are responsible for making sure that our code does what it needs to do.
 
@@ -301,7 +301,7 @@ If you follow the advice in the preceding sections, you’ll end up with a good 
 
 > 如果你遵循前文提及的建议，在业务逻辑和错误处理代码之间就会有良好的区隔。大量代码会开始变得像是整洁而简朴的算法。然而，这样做却把错误检测推到了程序的边缘地带。你打包了外部 API 以抛出自己的异常，你在代码的顶端定义了一个处理器来应付任何失败了的运算。在大多数时候，这种手段很棒，不过有时你也许不愿这么做。
 
-![](figures/ch7/103fig02.jpg)
+![](/figures/ch7/103fig02.jpg)
 
 Let’s take a look at an example. Here is some awkward code that sums expenses in a billing application:
 

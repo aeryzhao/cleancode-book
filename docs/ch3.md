@@ -1,6 +1,6 @@
 # 第 3 章 Functions 函数
 
-![](figures/ch3/3_1fig_martin.jpg)
+![](/figures/ch3/3_1fig_martin.jpg)
 
 In the early days of programming we composed our systems of routines and subroutines. Then, in the era of Fortran and PL/1 we composed our systems of programs, subprograms, and functions. Nowadays only the function survives from those early days. Functions are the first line of organization in any program. Writing them well is the topic of this chapter.
 
@@ -177,7 +177,7 @@ The following advice has appeared in one form or another for 30 years or more.
 
 > 过去 30 年以来，以下建议以不同形式一再出现：
 
-![](figures/ch3/3_2fig_martin.jpg)
+![](/figures/ch3/3_2fig_martin.jpg)
 
 FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.
 
@@ -397,7 +397,7 @@ The ideal number of arguments for a function is zero (niladic). Next comes one (
 
 > 最理想的参数数量是零（零参数函数），其次是一（单参数函数），再次是二（双参数函数），应尽量避免三（三参数函数）。有足够特殊的理由才能用三个以上参数（多参数函数）——所以无论如何也不要这么做。
 
-![](figures/ch3/3_3fig_martin.jpg)
+![](/figures/ch3/3_3fig_martin.jpg)
 
 Arguments are hard. They take a lot of conceptual power. That’s why I got rid of almost all of them from the example. Consider, for instance, the StringBuffer in the example. We could have passed it around as an argument rather than making it an instance variable, but then our readers would have had to interpret it each time they saw it. When you are reading the story told by the module, includeSetupPage() is easier to understand than includeSetupPageInto(newPage-Content). The argument is at a different level of abstraction than the function name and forces you to know a detail (in other words, StringBuffer) that isn’t particularly important at that point.
 
@@ -756,7 +756,7 @@ Look back at Listing 3-1 carefully and you will notice that there is an algorith
 
 > 回头仔细看看代码清单 3-1，你会注意到，有个算法在 SetUp、SuiteSetUp、TearDown 和 SuiteTearDown 中总共被重复了 4 次。识别重复不太容易，因为这 4 次重复与其他代码混在一起，而且也不完全一样。这样的重复还是会导致问题，因为代码因此而臃肿，且当算法改变时需要修改 4 处地方。而且也会增加 4 次放过错误的可能性。
 
-![](figures/ch3/3_4fig_martin.jpg)
+![](/figures/ch3/3_4fig_martin.jpg)
 
 This duplication was remedied by the include method in Listing 3-7. Read through that code again and notice how the readability of the whole module is enhanced by the reduction of that duplication.
 

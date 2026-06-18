@@ -292,7 +292,7 @@ For this simple case of N instructions in a sequence, no looping or conditionals
 
 > 对于这个简单的场景——N 条指令的序列，没有循环和条件分支，T 个线程——可能的执行路径总数等于
 
-![](figures/apA/322equ01.jpg)
+![](/figures/apA/322equ01.jpg)
 
 ### Calculating the Possible Orderings 计算可能的排列
 
@@ -402,9 +402,9 @@ Here is the byte-code generated for resetId():
 
 > 下面是 resetId() 生成的字节码：
 
-![](figures/apA/0324tab01.jpg)
+![](/figures/apA/0324tab01.jpg)
 
-![](figures/apA/0325tab01.jpg)
+![](/figures/apA/0325tab01.jpg)
 
 These three instructions are guaranteed to be atomic because, although the thread executing them could be interrupted after any one of them, the information for the PUTFIELD instruction (the constant value 0 on the top of the stack and the reference to this one below the top, along with the field value) cannot be touched by another thread. So when the assignment occurs, we are guaranteed that the value 0 will be stored in the field value. The operation is atomic. The operands all deal with information local to the method, so there is no interference between multiple threads.
 
@@ -418,7 +418,7 @@ With the ++ operation in the getNextId method, there are going to be problems. A
 
 > 但 getNextId 方法中的 ++ 操作就会有问题。假设 lastId 在方法开始时的值为 42。下面是这个新方法的字节码：
 
-![](figures/apA/0325tab02.jpg)
+![](/figures/apA/0325tab02.jpg)
 
 Imagine the case where the first thread completes the first three instructions, up to and including GETFIELD, and then it is interrupted. A second thread takes over and performs the entire method, incrementing lastId by one; it gets 43 back. Then the first thread picks up where it left off; 42 is still on the operand stack because that was the value of lastId when it executed GETFIELD. It adds one to get 43 again and stores the result. The value 43 is returned to the first thread as well. The result is that one of the increments is lost because the first thread stepped on the second thread after the second thread interrupted the first thread.
 
@@ -924,7 +924,7 @@ For N pages being processed by a single thread, the total execution time is 1.5 
 
 ### 图 A-1 单线程
 
-![](figures/apA/x01-1single_thread.jpg)
+![](/figures/apA/x01-1single_thread.jpg)
 
 ### Multithread Calculation of Throughput 多线程吞吐量计算
 
@@ -938,7 +938,7 @@ As you can see in Figure A-2, the multithreaded solution allows the process-boun
 
 ### 图 A-2 三个并发线程
 
-![](figures/apA/x01-2multi_thread.jpg)
+![](/figures/apA/x01-2multi_thread.jpg)
 
 ## DEADLOCK 死锁
 
@@ -1038,7 +1038,7 @@ This is also referred to as the deadly embrace. Imagine two threads, T1 and T2, 
 
 ### 图 A-3
 
-![](figures/apA/x01-3breaking_cycle.jpg)
+![](/figures/apA/x01-3breaking_cycle.jpg)
 
 All four of these conditions must hold for deadlock to be possible. Break any one of these conditions and deadlock is not possible.
 
@@ -1205,9 +1205,9 @@ Listing A-2 shows such a test:
    37: }
 ```
 
-![](figures/apA/0340tab01.jpg)
+![](/figures/apA/0340tab01.jpg)
 
-![](figures/apA/0341tab01.jpg)
+![](/figures/apA/0341tab01.jpg)
 
 This test certainly sets up the conditions for a concurrent update problem. However, the problem occurs so infrequently that the vast majority of times this test won't detect it.
 
