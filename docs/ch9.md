@@ -46,7 +46,7 @@ Yes, we've come a long way; but we have farther to go. The Agile and TDD movemen
 
 > 是的，我们已经走了很长一段路；但我们还有更远的路要走。敏捷和 TDD 运动鼓励了许多程序员编写自动化单元测试，每天都有更多人加入他们的行列。但在将测试纳入我们学科的疯狂冲刺中，许多程序员忽略了编写良好测试的一些更微妙、更重要的要点。
 
-THE THREE LAWS OF TDD TDD 的三条法则
+## 9.1 THE THREE LAWS OF TDD TDD 的三条法则
 
 By now everyone knows that TDD asks us to write unit tests first, before we write production code. But that rule is just the tip of the iceberg. Consider the following three laws:1
 
@@ -78,7 +78,7 @@ If we work this way, we will write dozens of tests every day, hundreds of tests 
 
 > 如果我们这样工作，每天会编写数十个测试，每月数百个，每年数千个。如果我们这样工作，这些测试将覆盖几乎所有生产代码。这些测试的巨大数量，可以与生产代码本身的规模相媲美，会带来令人畏惧的管理问题。
 
-KEEPING TESTS CLEAN 保持测试整洁
+## 9.2 KEEPING TESTS CLEAN 保持测试整洁
 
 Some years back I was asked to coach a team who had explicitly decided that their test code should not be maintained to the same standards of quality as their production code. They gave each other license to break the rules in their unit tests. "Quick and dirty" was the watchword. Their variables did not have to be well named, their test functions did not need to be short and descriptive. Their test code did not need to be well designed and thoughtfully partitioned. So long as the test code worked, and so long as it covered the production code, it was good enough.
 
@@ -126,7 +126,7 @@ So if your tests are dirty, then your ability to change your code is hampered, a
 
 > 所以如果你的测试很脏，你更改代码的能力就会受到阻碍，你开始失去改进代码结构的能力。测试越脏，代码就越脏。最终你失去了测试，代码也腐烂了。
 
-CLEAN TESTS 整洁的测试
+## 9.3 CLEAN TESTS 整洁的测试
 
 What makes a clean test? Three things. Readability, readability, and readability. Readability is perhaps even more important in unit tests than it is in production code. What makes tests readable? The same thing that makes all code readable: clarity, simplicity, and density of expression. In a test you want to say a lot with as few expressions as possible.
 
@@ -271,7 +271,7 @@ Notice that the vast majority of annoying detail has been eliminated. The tests 
 
 > 注意，绝大多数烦人的细节已被消除。测试直奔主题，只使用它们真正需要的数据类型和函数。任何阅读这些测试的人都应该能够很快理解它们做了什么，而不会被细节误导或淹没。
 
-Domain-Specific Testing Language 领域特定测试语言
+### 9.3.1 Domain-Specific Testing Language 领域特定测试语言
 
 The tests in Listing 9-2 demonstrate the technique of building a domain-specific language for your tests. Rather than using the APIs that programmers use to manipulate the system, we build up a set of functions and utilities that make use of those APIs and that make the tests more convenient to write and easier to read. These functions and utilities become a specialized API used by the tests. They are a testing language that programmers use to help themselves to write their tests and to help those who must read those tests later on.
 
@@ -281,7 +281,7 @@ This testing API is not designed up front; rather it evolves from the continued 
 
 > 这个测试 API 不是预先设计的；而是从持续重构被混淆细节污染的测试代码中演进而来的。正如你看到我将代码清单 9-1 重构为代码清单 9-2，有纪律的开发者也会将他们的测试代码重构为更简洁、更具表达力的形式。
 
-A Dual Standard 双重标准
+### 9.3.2 A Dual Standard 双重标准
 
 In one sense the team I mentioned at the beginning of this chapter had things right. The code within the testing API does have a different set of engineering standards than production code. It must still be simple, succinct, and expressive, but it need not be as efficient as production code. After all, it runs in a test environment, not a production environment, and those two environment have very different needs.
 
@@ -397,7 +397,7 @@ That is the nature of the dual standard. There are things that you might never d
 
 > 这就是双重标准的本质。有些事情你在生产环境中可能永远不会做，但在测试环境中完全没问题。通常它们涉及内存或 CPU 效率的问题。但它们从不涉及整洁性的问题。
 
-ONE ASSERT PER TEST 每个测试一个断言
+## 9.4 ONE ASSERT PER TEST 每个测试一个断言
 
 There is a school of thought4 that says that every test function in a JUnit test should have one and only one assert statement. This rule may seem draconian, but the advantage can be seen in Listing 9-5. Those tests come to a single conclusion that is quick and easy to understand.
 
@@ -523,7 +523,7 @@ So it's not the multiple asserts in each section of Listing 9-8 that causes the 
 
 > 所以问题不在于代码清单 9-8 每个部分中的多个断言。而是因为有多个概念被测试。所以最好的规则可能是你应该最小化每个概念的断言数量，每个测试函数只测试一个概念。
 
-F.I.R.S.T. F.I.R.S.T. 原则
+## 9.5 F.I.R.S.T. F.I.R.S.T. 原则
 
 8. Object Mentor Training Materials.
 
@@ -553,7 +553,7 @@ Timely The tests need to be written in a timely fashion. Unit tests should be wr
 
 > 及时（Timely）测试需要及时编写。单元测试应该在使它们通过的生产代码之前编写。如果你在生产代码之后编写测试，你可能会发现生产代码很难测试。你可能会认为某些生产代码太难测试了。你可能不会将生产代码设计为可测试的。
 
-CONCLUSION 结论
+## 9.6 CONCLUSION 结论
 
 We have barely scratched the surface of this topic. Indeed, I think an entire book could be written about clean tests. Tests are as important to the health of a project as the production code is. Perhaps they are even more important, because tests preserve and enhance the flexibility, maintainability, and reusability of the production code. So keep your tests constantly clean. Work to make them expressive and succinct. Invent testing APIs that act as domain-specific language that helps you write the tests.
 

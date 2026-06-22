@@ -1,0 +1,8 @@
+/* 让大纲中的长标题自动换行，完整显示 */
+.VPDocAsideOutline .outline-link {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  word-break: break-word;
+  line-height: 1.4;
+}
